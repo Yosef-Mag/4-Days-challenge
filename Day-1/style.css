@@ -1,0 +1,10 @@
+.gb {
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 200px;
+    height: 100px;
+    margin: auto;
+}
+#gn {
+    text-align: center;
+}
