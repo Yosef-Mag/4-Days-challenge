@@ -38,7 +38,16 @@ var play = function() {
     console.log(boxes)
     for (var i = 0; i < boxes.length; i++) {
     boxes[i].addEventListener("click", function() {
-        boxes[i].innerHTML = player
+        box0.innerHTML = player
+        box1.innerHTML = player
+        box2.innerHTML = player
+        box3.innerHTML = player
+        box4.innerHTML = player
+        box5.innerHTML = player
+        box6.innerHTML = player
+        box7.innerHTML = player
+        box8.innerHTML = player
+        winner();
         switchP();
     }, false)
     } 
@@ -59,52 +68,55 @@ var switchP = function() {
 }
 
 var winner = function() {
-    if ($(box0).val() === 'X' && $(box1).val() === 'X' && $(box2).val() === 'X') {
+    if (box0.value  === 'X' && box1.value === 'X' && box2.value === 'X') {
         alert('X Wins')
     }
-    if ($(box0).val() === 'O' && $(box1).val() === 'O' && $(box2).val() === 'O') {
+    else if (box0.value === 'O' && box1.value === 'O' && box2.value === 'O') {
         alert('O Wins')
     }
-    if ($(box3).val() === 'X' && $(box4).val() === 'X' && $(box5).val() === 'X') {
+    else if (box3.value === 'X' && box4.value === 'X' && box5.value === 'X') {
         alert('X Wins')
     }
-    if ($(box3).val() === 'O' && $(box4).val() === 'O' && $(box5).val() === 'O') {
+    else if (box3.value === 'O' && box4.value === 'O' && box5.value === 'O') {
         alert('O Wins')
     }
-    if ($(box6).val() === 'X' && $(box7).val() === 'X' && $(box8).val() === 'X') {
+    else if (box6.value === 'X' && box7.value === 'X' && box8.value === 'X') {
         alert('X Wins')
     }
-    if ($(box6).val() === 'O' && $(box7).val() === 'O' && $(box8).val() === 'O') {
+    else if (box6.value === 'O' && box7.value === 'O' && box8.value === 'O') {
         alert('O Wins')
     }
-    if ($(box0).val() === 'X' && $(box4).val() === 'X' && $(box8).val() === 'X') {
+    else if (box0.value === 'X' && box4.value === 'X' && box8.value === 'X') {
         alert('X Wins')
     }
-    if ($(box0).val() === 'O' && $(box4).val() === 'O' && $(box8).val() === 'O') {
+    else if (box0.value === 'O' && box4.value === 'O' && box8.value === 'O') {
         alert('O Wins')
     }
-    if ($(box0).val() === 'X' && $(box3).val() === 'X' && $(box6).val() === 'X') {
+    else if (box0.value === 'X' && box3.value === 'X' && box6.value === 'X') {
         alert('X Wins')
     }
-    if ($(box0).val() === 'O' && $(box3).val() === 'O' && $(box6).val() === 'O') {
+    else if (box0.value === 'O' && box3.value === 'O' && box6.value === 'O') {
         alert('O Wins')
     }
-    if ($(box1).val() === 'X' && $(box4).val() === 'X' && $(box7).val() === 'X') {
+    else if (box1.value === 'X' && box4.value === 'X' && box7.value === 'X') {
         alert('X Wins')
     }
-    if ($(box1).val() === 'O' && $(box4).val() === 'O' && $(box7).val() === 'O') {
+    else if (box1.value === 'O' && box4.value === 'O' && box7.value === 'O') {
         alert('O Wins')
     }
-    if ($(box2).val() === 'X' && $(box5).val() === 'X' && $(box8).val() === 'X') {
+    else if (box2.value === 'X' && box5.value === 'X' && box8.value === 'X') {
         alert('X Wins')
     }
-    if ($(box2).val() === 'O' && $(box5).val() === 'O' && $(box8).val() === 'O') {
+    else if (box2.value === 'O' && box5.value === 'O' && box8.value === 'O') {
         alert('O Wins')
     }
-    if ($(box2).val() === 'X' && $(box4).val() === 'X' && $(box6).val() === 'X') {
+    else if (box2.value === 'X' && box4.value === 'X' && box6.value === 'X') {
         alert('X Wins')
     }
-    if ($(box2).val() === 'O' && $(box4).val() === 'O' && $(box6).val() === 'O') {
+    else if (box2.value === 'O' && box4.value === 'O' && box6.value === 'O') {
         alert('O Wins')
+    }
+    else if (document.getElementsByTagName('gb').value === true){
+        alert('Draw')
     }
 }
