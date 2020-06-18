@@ -30,7 +30,8 @@ var play = function() {
     console.log(boxes)
     for (var i = 0; i < boxes.length; i++) {
     boxes[i].addEventListener("click", function() {
-        $('td').append(player)
+        document.getElementById('b0').innerHTML = player
+        switchP();
     }, false)
     } 
 }
